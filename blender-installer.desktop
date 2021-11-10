@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Blender
+GenericName=3D modeler
+Comment=3D modeling, animation, rendering and post-production
+Exec=/opt/blender-installer/blender %f
+Icon=/opt/blender-installer/blender.svg
+Terminal=false
+Type=Application
+Keywords=3d;cg;modeling;animation;painting;sculpting;texturing;video editing;video tracking;rendering;render engine;cycles;game engine;python;
+Categories=Graphics;3DGraphics;
+MimeType=application/x-blender;
