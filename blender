@@ -13,6 +13,8 @@ if [[ ! -d ~/.local/blender ]] ; then
     tar -xf blender.tar.xz | zenity --progress --pulsate --text="Extracting" --no-cancel --auto-kill --auto-close
     rm -f blender.tar.xz
     mv blender* blender
+    cd blender/*/python/lib/python*
+    patch -p1 -N < /opt/blender-installer/blender-use-local-python3.patch
     cd "$curdir"
 fi
 exec ~/.local/blender/blender $@

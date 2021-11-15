@@ -1,0 +1,12 @@
+--- a/site.py	2021-11-15 06:14:14.351820579 -0000
++++ b/site.py	2021-04-17 20:09:41.000000000 -0000
+@@ -350,6 +350,9 @@
+             for libdir in libdirs:
+                 path = os.path.join(prefix, libdir, "site-packages")
+                 sitepackages.append(path)
++    sitepackages.append("/usr/lib/python3")
++    sitepackages.append("/usr/lib/python3/dist-packages")
++    sitepackages.append("/usr/local/lib/python3/dist-packages")
+     return sitepackages
+ 
+ def addsitepackages(known_paths, prefixes=None):
